@@ -1,4 +1,4 @@
-![Traveller](https://user-images.githubusercontent.com/55500140/116284353-63a09000-a763-11eb-94aa-8038e734d10b.png)
+![traveller_git](https://user-images.githubusercontent.com/55500140/116286274-69977080-a765-11eb-9bfc-294164e342f0.png)
 
 ## Sobre 📝
 
