@@ -17,3 +17,8 @@ a cidade de São Paulo, tão rica em gastronomia, parques, cultura, história, s
 - [ ] Vida Noturna;
 - [ ] Entretenimento.
 
+## Acessibilidade 💻
+
+- Pensando na acessibilidade para usuários com deficiência visual, a descrição de imagem alternativa foi adicionada ao código, para que assim leitores de tela possam identificá-las e descrevê-las para os usuários que utilizarem o recurso. Outro recurso adicionado foi a responsividade, através dela o usuário com baixa visão pode aumentar o zoom da página de acordo com seu desejo e a página continuará com uma boa formatação.
+
+- As cores utilizadas no portal foram escolhidas através de testes de contraste que passassem no seguinte nível: WCAG AA. Isto ajuda usuários que possuem daltonismo a distinguir cores através de seu contraste. 
