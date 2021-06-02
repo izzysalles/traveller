@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/hotels.css" />
     <link
@@ -12,60 +18,84 @@
     <title>Traveller</title>
   </head>
   <body>
-    <div class="site-header">
-      <div class="navbar">
-        <div class="site-title">
+    <div class="container-fluid" id="header">
+      <div class="row" id="navbar">
+        <div class="col-8" id="site-title">
           <a href="../index.html"
             >Traveller<a href="../index.html" class="dot">.</a></a
           >
         </div>
-        <nav class="menu">
-          <li><a href="../index.html">Home</a></li>
-          <li>
-            <a href="https://github.com/izzysalles" target="_blank">
-              Contato
-            </a>
-          </li>
-        </nav>
-      </div>
-    </div>
-    <div class="hotel-area">
-      <div class="hotel-container">
-        <div class="back-arrow">
-          <a href="../index.html">
-            <img src="../images/arrow.png" alt="Seta de volta">
-            Voltar
-          </a>
-        </div>
-        <h1>IBIS Styles São Paulo Anhembi</h1>
-        <div class="hotel-description">
-          <div class="hotel-img">
-            <img src="../images/ibis-anhembi.png" alt="Em primeiro plano há uma branca cinza com o nome do Hotel Ibis Anhembi escrito em verde e indicando a entrada. Ao fundo há dois carros cinzas e a entrada do hotel que possui um grande letreiro verde com seu nome.">
-          </div>
-          <div class="text-area">
-            <p>
-              Descrição: Com design moderno e decoração inspirada no tema aviação, o hotel oferece quartos com camas Sweet Bed by Ibis, Wi-Fi grátis e um delicioso café da manhã servido diariamente. E além disso, também conta com espaço kids, restaurante e bar 14 IBIS, estacionamento, quartos para famílias e quartos para pessoas com mobilidade reduzida. O Hotel fica a 25 min da Av. Paulista.
-            </p>
-            <p>Localização: Av. Cruzeiro do Sul, 1709 - Santana, São Paulo - SP</p>
-            <p>Preços:  Diárias variam de R$121 a R$250.</p>
-            <a href="https://all.accor.com/hotel/9596/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps" target="_blank">Link para o site oficial</a>
+        <div class="col">
+          <div class="row" id="nav-btns">
+            <div class="col" id="home">
+              <a href="../index.html">Home</a>
+            </div>
+            <div class="col" id="contact">
+              <a href="https://github.com/izzysalles" target="_blank">
+                Contato
+              </a>
+            </div>
           </div>
         </div>
-        <h1>Como chegar</h1>
-        <div class="map-area">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.465835857112!2d-46.6278371850229!3d-23.515742084705575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58859029337b%3A0x1128b91971707df1!2sibis%20Styles%20S%C3%A3o%20Paulo%20Anhembi!5e0!3m2!1spt-BR!2sbr!4v1619459309659!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <h1>Avalie</h1>
-        <form name="review" id="review" method="post" class="review-area">
-          <p>Faça sua avaliação:</p>
-          <textarea name="review-text" id="review-text" cols="30" rows="10" placeholder="Digite sua avaliação aqui"></textarea>
-          <button type="submit" class="send">Enviar</button>
-        </form>
       </div>
     </div>
-  </body>
-  <footer>
-    <div class="footer-content">
+    <div class="container-fluid" id="hotel-area">
+      <div class="back-arrow">
+        <a href="../index.html">
+          <img src="../images/arrow.png" alt="back-arrow" />
+          Voltar
+        </a>
+      </div>
+      <h1>IBIS Styles São Paulo Anhembi</h1>
+      <div class="hotel-description">
+        <div class="hotel-img">
+          <img src="../images/ibis-anhembi.png" alt="hotel-photo" />
+        </div>
+        <div class="text-area">
+          <p>
+            Descrição: Com design moderno e decoração inspirada no tema aviação,
+            o hotel oferece quartos com camas Sweet Bed by Ibis, Wi-Fi grátis e
+            um delicioso café da manhã servido diariamente. E além disso, também
+            conta com espaço kids, restaurante e bar 14 IBIS, estacionamento,
+            quartos para famílias e quartos para pessoas com mobilidade
+            reduzida. O Hotel fica a 25 min da Av. Paulista.
+          </p>
+          <p>
+            Localização: Av. Cruzeiro do Sul, 1709 - Santana, São Paulo - SP
+          </p>
+          <p>Preços: Diárias variam de R$121 a R$250.</p>
+          <a
+            href="https://all.accor.com/hotel/9596/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
+            target="_blank"
+            >Link para o site oficial</a
+          >
+        </div>
+      </div>
+      <h1>Como chegar</h1>
+      <div class="map-area">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.465835857112!2d-46.6278371850229!3d-23.515742084705575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58859029337b%3A0x1128b91971707df1!2sibis%20Styles%20S%C3%A3o%20Paulo%20Anhembi!5e0!3m2!1spt-BR!2sbr!4v1619459309659!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <h1>Avalie</h1>
+      <form name="review" id="review" method="post" class="review-area">
+        <p>Faça sua avaliação:</p>
+        <textarea
+          name="review-text"
+          id="review-text"
+          cols="30"
+          rows="10"
+          placeholder="Digite sua avaliação aqui"
+        ></textarea>
+        <button type="submit" class="send">Enviar</button>
+      </form>
+    </div>
+    <div class="container-fluid" id="footer">
       <div class="about">
         <p class="title">Sobre</p>
         <p class="description">
@@ -76,16 +106,23 @@
         <p class="title">Entre em contato</p>
         <div class="social-media">
           <a class="description" href="https://github.com/izzysalles"
-            ><img src="../images/github.png" alt="ícone do github"
+            ><img src="../images/github.png" alt="github-icon"
           /></a>
           <a class="description" href="https://www.instagram.com/uxizzy/"
-            ><img src="../images/instagram.png" alt="ícone do instagram"
+            ><img src="../images/instagram.png" alt="instagram-icon"
           /></a>
-          <a class="description" href="https://www.facebook.com/isabella.salles.39"
-            ><img src="../images/facebook.png" alt="ícone do facebook"
+          <a
+            class="description"
+            href="https://www.facebook.com/isabella.salles.39"
+            ><img src="../images/facebook.png" alt="facebook-icon"
           /></a>
         </div>
       </div>
     </div>
-  </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
